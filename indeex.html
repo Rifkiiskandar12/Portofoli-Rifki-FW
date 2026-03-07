@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Rifki | Tailwind Version</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                accent: '#FF4D00', // Warna oranye desain RFK
+                dark: '#0A0A0A',
+              },
+              animation: {
+                'marquee': 'marquee 25s linear infinite',
+              },
+              keyframes: {
+                marquee: {
+                  '0%': { transform: 'translateX(0%)' },
+                  '100%': { transform: 'translateX(-100%)' },
+                }
+              }
+            }
+          }
+        }
+    </script>
+    <style>
+        /* Custom font if needed, or use Tailwind default sans */
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .strikethrough { text-decoration: line-through; text-decoration-color: #FF4D00; }
+    </style>
+</head>
+<body class="bg-[#F9F9F7] text-dark">
+
+    <nav class="flex items-center justify-between px-8 md:px-20 py-6 sticky top-0 bg-[#F9F9F7]/80 backdrop-blur-md z-50">
+        <div class="text-2xl font-black tracking-tighter">RFK<span class="text-accent">.</span></div>
+        <ul class="hidden md:flex gap-8 font-bold text-sm uppercase tracking-widest">
+            <li><a href="#home" class="hover:text-accent transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-accent transition-colors">About</a></li>
+            <li><a href="#skills" class="hover:text-accent transition-colors">Skills</a></li>
+            <li><a href="#projects" class="hover:text-accent transition-colors">Projects</a></li>
+            <li><a href="#contact" class="hover:text-accent transition-colors">Contact</a></li>
+        </ul>
+        <button class="px-6 py-2 border-2 border-dark font-bold hover:bg-dark hover:text-white transition-all text-sm uppercase">
+            Let's Talk
+        </button>
+    </nav>
+
+    <section id="home" class="flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-20 gap-10">
+        <div class="md:w-3/5">
+            <h1 class="text-5xl md:text-7xl font-black leading-[1.1] mb-6">
+                HI, I'M RIFKI. <br>
+                A CREATIVE <span class="text-accent">✦</span> DESIGNER <br>
+                BASED IN <span class="strikethrough text-gray-400">INDONESIA</span>.
+            </h1>
+            <p class="text-sm font-bold tracking-[0.3em] text-gray-500 mb-8">GRAPHIC DESIGN ✦ WEB DEVELOPMENT ✦ UI/UX DESIGN</p>
+            <div class="flex gap-4">
+                <button class="bg-dark text-white px-8 py-4 font-bold text-sm uppercase hover:bg-accent transition-colors">Got a project?</button>
+                <button class="border-2 border-dark px-8 py-4 font-bold text-sm uppercase hover:bg-dark hover:text-white transition-all">Let's Talk</button>
+            </div>
+        </div>
+        <div class="md:w-2/5 relative">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-accent rounded-full blur-3xl opacity-20 animate-pulse"></div>
+            <div class="relative z-10 w-full aspect-square bg-gray-200 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                <img src="img/profile.png" alt="Rifki Iskandar" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-dark text-white py-4 overflow-hidden whitespace-nowrap border-y border-dark">
+        <div class="flex animate-marquee">
+            <div class="flex shrink-0 items-center gap-10 px-4 text-lg font-black tracking-widest uppercase">
+                <span>Graphic Design <span class="text-accent">✦</span></span>
+                <span>Web Developer <span class="text-accent">✦</span></span>
+                <span>UI/UX Design <span class="text-accent">✦</span></span>
+                <span>Graphic Design <span class="text-accent">✦</span></span>
+                <span>Web Developer <span class="text-accent">✦</span></span>
+                <span>UI/UX Design <span class="text-accent">✦</span></span>
+            </div>
+            <div class="flex shrink-0 items-center gap-10 px-4 text-lg font-black tracking-widest uppercase">
+                <span>Graphic Design <span class="text-accent">✦</span></span>
+                <span>Web Developer <span class="text-accent">✦</span></span>
+                <span>UI/UX Design <span class="text-accent">✦</span></span>
+                <span>Graphic Design <span class="text-accent">✦</span></span>
+                <span>Web Developer <span class="text-accent">✦</span></span>
+                <span>UI/UX Design <span class="text-accent">✦</span></span>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="px-8 md:px-20 py-32 grid md:grid-cols-2 gap-16 items-start">
+        <div>
+            <p class="text-accent font-bold text-sm tracking-widest mb-4">RIFKI ISKANDAR <span class="text-dark">✦</span> INDONESIA</p>
+            <h2 class="text-4xl md:text-5xl font-black leading-tight">A CREATIVE DESIGNER WITH A PASSION FOR BEAUTIFUL DESIGNS.</h2>
+        </div>
+        <div class="space-y-10">
+            <p class="text-gray-600 text-lg leading-relaxed">Saya adalah mahasiswa semester 3 di STTI Sony Sugema yang fokus pada pengembangan web dan desain antarmuka. Saya senang menggabungkan fungsionalitas teknis dengan estetika desain.</p>
+            <div class="grid grid-cols-3 gap-4 border-t border-gray-200 pt-10">
+                <div>
+                    <span class="text-xs font-bold text-accent block mb-1">BORN IN</span>
+                    <p class="font-black text-lg uppercase">Indonesia</p>
+                </div>
+                <div>
+                    <span class="text-xs font-bold text-accent block mb-1">AGE</span>
+                    <p class="font-black text-lg uppercase">19 Y/o</p>
+                </div>
+                <div>
+                    <span class="text-xs font-bold text-accent block mb-1">BORN</span>
+                    <p class="font-black text-lg uppercase">07 Dec 2006</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-white px-8 md:px-20 py-32">
+        <div class="mb-16">
+            <p class="text-accent font-bold text-sm tracking-widest">SKILLS <span class="text-dark">✦</span> ABILITIES</p>
+            <h2 class="text-5xl font-black uppercase">My Skills</h2>
+        </div>
+        <div class="space-y-8 max-w-4xl">
+            <div>
+                <div class="flex justify-between font-black text-sm mb-4">
+                    <span>GRAPHIC DESIGN</span>
+                    <span class="text-accent">90%</span>
+                </div>
+                <div class="w-full h-2 bg-gray-100 overflow-hidden">
+                    <div class="h-full bg-accent" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between font-black text-sm mb-4">
+                    <span>WEB DEVELOPMENT</span>
+                    <span class="text-accent">80%</span>
+                </div>
+                <div class="w-full h-2 bg-gray-100 overflow-hidden">
+                    <div class="h-full bg-accent" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between font-black text-sm mb-4">
+                    <span>UI/UX DESIGN</span>
+                    <span class="text-accent">85%</span>
+                </div>
+                <div class="w-full h-2 bg-gray-100 overflow-hidden">
+                    <div class="h-full bg-accent" style="width: 85%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="px-8 md:px-20 py-32 bg-[#F9F9F7]">
+        <div class="mb-20">
+            <p class="text-accent font-bold text-sm tracking-widest uppercase">Projects ✦ Portofolio</p>
+            <h2 class="text-6xl font-black uppercase italic">Selected Works</h2>
+        </div>
+        
+        <div class="space-y-0 divide-y divide-gray-300 border-y border-gray-300">
+            <a href="project-web.html" class="group flex flex-col md:flex-row md:items-center justify-between py-12 hover:px-6 transition-all duration-500">
+                <div class="flex items-center gap-8">
+                    <span class="text-gray-400 font-bold">01</span>
+                    <div>
+                        <span class="text-xs font-black text-accent tracking-widest uppercase mb-2 block">Web Development</span>
+                        <h3 class="text-3xl md:text-5xl font-black group-hover:italic transition-all">Library Management System</h3>
+                    </div>
+                </div>
+                <div class="mt-6 md:mt-0 px-6 py-2 border border-dark rounded-full font-bold text-xs uppercase group-hover:bg-dark group-hover:text-white transition-colors">
+                    View Case Study
+                </div>
+            </a>
+            <a href="project-ui-ux.html" class="group flex flex-col md:flex-row md:items-center justify-between py-12 hover:px-6 transition-all duration-500">
+                <div class="flex items-center gap-8">
+                    <span class="text-gray-400 font-bold">02</span>
+                    <div>
+                        <span class="text-xs font-black text-accent tracking-widest uppercase mb-2 block">UI/UX Design</span>
+                        <h3 class="text-3xl md:text-5xl font-black group-hover:italic transition-all">UI/UX Project Collection</h3>
+                    </div>
+                </div>
+                <div class="mt-6 md:mt-0 px-6 py-2 border border-dark rounded-full font-bold text-xs uppercase group-hover:bg-dark group-hover:text-white transition-colors">
+                    View Case Study
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="px-8 md:px-20 py-32 grid md:grid-cols-2 gap-20 bg-dark text-white">
+        <div>
+            <p class="text-accent font-bold text-sm tracking-widest mb-4">CONTACT <span class="text-white">✦</span> ME</p>
+            <h2 class="text-5xl font-black mb-8">LET'S START A PROJECT TOGETHER</h2>
+            <p class="text-gray-400">Punya ide atau butuh bantuan teknis Laravel? Mari mengobrol!</p>
+        </div>
+        <form class="space-y-6">
+            <div class="border-b border-gray-700 py-4 focus-within:border-accent transition-colors">
+                <label class="block text-xs font-black uppercase text-gray-500 mb-2">Name</label>
+                <input type="text" placeholder="Rifki Iskandar" class="bg-transparent w-full outline-none text-xl font-bold">
+            </div>
+            <div class="border-b border-gray-700 py-4 focus-within:border-accent transition-colors">
+                <label class="block text-xs font-black uppercase text-gray-500 mb-2">Email</label>
+                <input type="email" placeholder="rifki@example.com" class="bg-transparent w-full outline-none text-xl font-bold">
+            </div>
+            <div class="border-b border-gray-700 py-4 focus-within:border-accent transition-colors">
+                <label class="block text-xs font-black uppercase text-gray-500 mb-2">Message</label>
+                <textarea rows="3" placeholder="Apa yang bisa saya bantu?" class="bg-transparent w-full outline-none text-xl font-bold resize-none"></textarea>
+            </div>
+            <button class="bg-accent text-white px-12 py-5 font-black uppercase text-sm tracking-widest hover:scale-105 transition-transform">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="bg-dark text-white px-8 md:px-20 pt-20 pb-10 border-t border-gray-800">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-16 border-b border-gray-800">
+            <div class="text-4xl font-black tracking-tighter mb-10 md:mb-0">RFK<span class="text-accent">.</span></div>
+            <ul class="flex flex-wrap gap-8 font-black text-xs uppercase tracking-widest">
+                <li><a href="#home" class="hover:text-accent">Home</a></li>
+                <li><a href="#about" class="hover:text-accent">About</a></li>
+                <li><a href="#skills" class="hover:text-accent">Skills</a></li>
+                <li><a href="#projects" class="hover:text-accent">Projects</a></li>
+                <li><a href="#contact" class="hover:text-accent">Contact</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-end mt-12 gap-8">
+            <p class="text-gray-500 text-xs font-bold uppercase tracking-widest">@2026 RIFKI ISKANDAR. ALL RIGHTS RESERVED.</p>
+            <div class="flex flex-col gap-4 items-end">
+                <a href="#" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-accent transition-colors">
+                    <img src="img/icon/linkedin.svg" class="w-4 h-4 invert" alt="LinkedIn">
+                </a>
+                <a href="#" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-accent transition-colors">
+                    <img src="img/icon/instagram.svg" class="w-4 h-4 invert" alt="Instagram">
+                </a>
+                <a href="#" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-accent transition-colors">
+                    <img src="img/icon/github.svg" class="w-4 h-4 invert" alt="Github">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

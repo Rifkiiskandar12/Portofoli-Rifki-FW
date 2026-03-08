@@ -29,7 +29,7 @@
     <style>
         /* Custom font if needed, or use Tailwind default sans */
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { font-family: 'inter', sans-serif; }
         .strikethrough { text-decoration: line-through; text-decoration-color: #FF4D00; }
     </style>
 </head>
@@ -97,7 +97,7 @@
             <h2 class="text-4xl md:text-5xl font-black leading-tight">A CREATIVE DESIGNER WITH A PASSION FOR BEAUTIFUL DESIGNS.</h2>
         </div>
         <div class="space-y-10">
-            <p class="text-gray-600 text-lg leading-relaxed">Saya adalah mahasiswa semester 3 di STTI Sony Sugema yang fokus pada pengembangan web dan desain antarmuka. Saya senang menggabungkan fungsionalitas teknis dengan estetika desain.</p>
+            <p class="text-gray-600 text-lg leading-relaxed">mulai membuat desain poster sejak SD dan senang melakukan eksperimen terhadap setiap hasil desain yang saya buat menjadi suatu hal yang saya sukai.</p>
             <div class="grid grid-cols-3 gap-4 border-t border-gray-200 pt-10">
                 <div>
                     <span class="text-xs font-bold text-accent block mb-1">BORN IN</span>
@@ -115,18 +115,18 @@
         </div>
     </section>
 
-    <section id="skills" class="bg-white px-8 md:px-20 py-32">
-        <div class="mb-16">
+    <section id="skills" class="bg-white items-center px-8 gap-40 md:px-40 py-32">
+        <div class="mb-24 flex-col text-center">
             <p class="text-accent font-bold text-sm tracking-widest">SKILLS <span class="text-dark">✦</span> ABILITIES</p>
-            <h2 class="text-5xl font-black uppercase">My Skills</h2>
+            <h2 class="text-5xl font-black uppercase">MY SKILLS AND ABILITIES</h2>
         </div>
-        <div class="space-y-8 max-w-4xl">
+        <div class="space-y-8 max-w-8xl ">
             <div>
-                <div class="flex justify-between font-black text-sm mb-4">
+                <div class="flex justify-between font-black text-sm width-100% mb-4">
                     <span>GRAPHIC DESIGN</span>
                     <span class="text-accent">90%</span>
                 </div>
-                <div class="w-full h-2 bg-gray-100 overflow-hidden">
+                <div class="w-full h-[8px] bg-gray-100 relative overflow-hidden">
                     <div class="h-full bg-accent" style="width: 90%;"></div>
                 </div>
             </div>
@@ -152,30 +152,42 @@
     </section>
 
     <section id="projects" class="px-8 md:px-20 py-32 bg-[#F9F9F7]">
-        <div class="mb-20">
+        <div class="mb-20 text-center">
             <p class="text-accent font-bold text-sm tracking-widest uppercase">Projects ✦ Portofolio</p>
-            <h2 class="text-6xl font-black uppercase italic">Selected Works</h2>
+            <h2 class="text-5xl font-black uppercase">My Projects</h2>
         </div>
         
         <div class="space-y-0 divide-y divide-gray-300 border-y border-gray-300">
-            <a href="project-web.html" class="group flex flex-col md:flex-row md:items-center justify-between py-12 hover:px-6 transition-all duration-500">
+            <a href="design.html" class="group flex flex-col md:flex-row md:items-center justify-between py-12 hover:px-6 transition-all duration-500">
                 <div class="flex items-center gap-8">
                     <span class="text-gray-400 font-bold">01</span>
                     <div>
-                        <span class="text-xs font-black text-accent tracking-widest uppercase mb-2 block">Web Development</span>
-                        <h3 class="text-3xl md:text-5xl font-black group-hover:italic transition-all">Library Management System</h3>
+                        <span class="text-xs font-black text-accent tracking-widest uppercase mb-2 block">DESIGN</span>
+                        <h3 class="text-3xl md:text-5xl font-black group-hover:italic transition-all">GRAPHIC DESIGN</h3>
                     </div>
                 </div>
                 <div class="mt-6 md:mt-0 px-6 py-2 border border-dark rounded-full font-bold text-xs uppercase group-hover:bg-dark group-hover:text-white transition-colors">
                     View Case Study
                 </div>
             </a>
-            <a href="project-ui-ux.html" class="group flex flex-col md:flex-row md:items-center justify-between py-12 hover:px-6 transition-all duration-500">
+            <a href="web.html" class="group flex flex-col md:flex-row md:items-center justify-between py-12 hover:px-6 transition-all duration-500">
                 <div class="flex items-center gap-8">
                     <span class="text-gray-400 font-bold">02</span>
                     <div>
-                        <span class="text-xs font-black text-accent tracking-widest uppercase mb-2 block">UI/UX Design</span>
-                        <h3 class="text-3xl md:text-5xl font-black group-hover:italic transition-all">UI/UX Project Collection</h3>
+                        <span class="text-xs font-black text-accent tracking-widest uppercase mb-2 block">WEBSITE</span>
+                        <h3 class="text-3xl md:text-5xl font-black group-hover:italic transition-all">WEB DEVELOPMENT</h3>
+                    </div>
+                </div>
+                <div class="mt-6 md:mt-0 px-6 py-2 border border-dark rounded-full font-bold text-xs uppercase group-hover:bg-dark group-hover:text-white transition-colors">
+                    View Case Study
+                </div>
+            </a>
+            <a href="uiux.html" class="group flex flex-col md:flex-row md:items-center justify-between py-12 hover:px-6 transition-all duration-500">
+                <div class="flex items-center gap-8">
+                    <span class="text-gray-400 font-bold">03</span>
+                    <div>
+                        <span class="text-xs font-black text-accent tracking-widest uppercase mb-2 block">UI/UX</span>
+                        <h3 class="text-3xl md:text-5xl font-black group-hover:italic transition-all">UI/UX DESIGN</h3>
                     </div>
                 </div>
                 <div class="mt-6 md:mt-0 px-6 py-2 border border-dark rounded-full font-bold text-xs uppercase group-hover:bg-dark group-hover:text-white transition-colors">
@@ -189,7 +201,7 @@
         <div>
             <p class="text-accent font-bold text-sm tracking-widest mb-4">CONTACT <span class="text-white">✦</span> ME</p>
             <h2 class="text-5xl font-black mb-8">LET'S START A PROJECT TOGETHER</h2>
-            <p class="text-gray-400">Punya ide atau butuh bantuan teknis Laravel? Mari mengobrol!</p>
+            <p class="text-gray-400">Ayo kontak kami</p>
         </div>
         <form class="space-y-6">
             <div class="border-b border-gray-700 py-4 focus-within:border-accent transition-colors">
@@ -219,17 +231,18 @@
                 <li><a href="#contact" class="hover:text-accent">Contact</a></li>
             </ul>
         </div>
+
         <div class="flex flex-col md:flex-row justify-between items-end mt-12 gap-8">
-            <p class="text-gray-500 text-xs font-bold uppercase tracking-widest">@2026 RIFKI ISKANDAR. ALL RIGHTS RESERVED.</p>
-            <div class="flex flex-col gap-4 items-end">
-                <a href="#" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-accent transition-colors">
-                    <img src="img/icon/linkedin.svg" class="w-4 h-4 invert" alt="LinkedIn">
+            <p class="text-gray-500 text-xs font-bold uppercase  tracking-widest">@2026 RIFKI ISKANDAR. ALL RIGHTS RESERVED.</p>
+            <div class="flex flex-col gap-4 items-center">
+                <a href="https://www.linkedin.com/in/muhammad-rifki-iskandar-bachrie-15692b356/" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-accent hover:text-accent transition-all">
+                    <img src="img/icon/linkedin.svg" class="w-4 h-4" alt="LinkedIn">
                 </a>
-                <a href="#" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-accent transition-colors">
-                    <img src="img/icon/instagram.svg" class="w-4 h-4 invert" alt="Instagram">
+                <a href="https://www.instagram.com/rfkskndr/" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-accent hover:text-accent transition-all">
+                    <img src="img/icon/instagram.svg" class="w-4 h-4" alt="Instagram">
                 </a>
-                <a href="#" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-accent transition-colors">
-                    <img src="img/icon/github.svg" class="w-4 h-4 invert" alt="Github">
+                <a href="https://github.com/Rifkiiskandar12" class="w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center hover:border-accent hover:text-accent transition-all">
+                    <img src="img/icon/github.svg" class="w-4 h-4" alt="Github">
                 </a>
             </div>
         </div>
